@@ -1,0 +1,32 @@
+[name]
+NewTraits
+
+[version]
+1.1
+
+[rifeversion]
+362
+
+[author]
+wuxiangjinxing
+
+[desc]
+Some new traits for leaders and civilizations:
+
+Great Leader(Sabathiel): 
+	Creating one melee follower (warrior/axeman/phalanx) after conquering a city.  Follower type dependent on metal-working technique level.
+	
+Diverse(Elohim): 
+	Units have a 20% chance to be borned with a random race (elf/dark elf/dwarf/orc/lizardman/goblin)
+	
+Destiny(Decius):
+	Decius gets one new trait depending on his alignment.
+	If he is evil, he gets Ursurper: can get traits (aggressive, industrial, etc.) from enemy leaders when conquesting other civilizations.
+	If he is good, he gets Exonerator: can convert all remaining units of the conquered civilization.
+	If he is neutral, he gets Abider: all units get one free promotion after conquering a civilization
+	
+Grand Marshall(Decius):
+	Create one great commander when building your capital.
+	Free command post in each city.
+
+;[compatible]

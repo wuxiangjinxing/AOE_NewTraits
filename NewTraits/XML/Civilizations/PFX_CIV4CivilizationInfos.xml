@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<!-- Created with the FfH editor by Kael -->
+<!-- Sid Meier's Civilization 4 -->
+<!-- Copyright Firaxis Games 2005 -->
+<!-- -->
+<!-- Civilization Infos -->
+<Civ4CivilizationInfos xmlns="x-schema:PFX_CIV4CivilizationsSchema.xml">
+	<CivilizationInfos>
+		<CivilizationInfo><!-- Elohim -->
+			<Type>CIVILIZATION_ELOHIM</Type>		
+			<CivTrait>TRAIT_DIVERSE</CivTrait>
+		</CivilizationInfo>
+	</CivilizationInfos>	
+</Civ4CivilizationInfos>
