@@ -139,13 +139,13 @@ def onUnitCreated(self, argsList):
 	UnitClass	   = pUnit.getUnitClassType()
 	UnitClassInfo	   = gc.getUnitClassInfo(pUnit.getUnitClassType())
 	CombatList  = [getInfoType('UNITCOMBAT_ADEPT'),getInfoType('UNITCOMBAT_ARCHER'),getInfoType('UNITCOMBAT_DISCIPLE'),getInfoType('UNITCOMBAT_MELEE'),getInfoType('UNITCOMBAT_MOUNTED'),getInfoType('UNITCOMBAT_RECON')]
-	PromotList  = ['PROMOTION_CORPORAL','PROMOTION_SEARGENT','PROMOTION_MASTER_SEARGENT','PROMOTION_CAPTAIN','PROMOTION_GENERAL']
-	RaceList = ['PROMOTION_POISON_RESISTANCE','PROMOTION_ORC','PROMOTION_LIZARDMAN_CUALLI','PROMOTION_WINTERBORN','PROMOTION_DWARF','PROMOTION_ELF','PROMOTION_LIZARDMAN_MAZATL','PROMOTION_DARK_ELF','PROMOTION_ORC']
+	RaceList = ['PROMOTION_POISON_RESISTANCE','PROMOTION_ORC','PROMOTION_LIZARDMAN_CUALLI','PROMOTION_WINTERBORN','PROMOTION_DWARF','PROMOTION_ELF','PROMOTION_LIZARDMAN_MAZATL','PROMOTION_SHADE','PROMOTION_DARK_ELF']
+	
+	if gc.getInfoTypeForString('PROMOTION_ALFAR') != -1:
+		RaceList.append('PROMOTION_ALFAR')
     
- 	if pPlayer.hasTrait(getInfoType('TRAIT_GRAND_MARSHAL')) and pUnit.getUnitCombatType() in CombatList:
-		for iPromo in PromotList:
-			if pUnit.getLevel() >= gc.getPromotionInfo(getInfoType(iPromo)).getMinLevel() and not pUnit.isHasPromotion(getInfoType(iPromo)):
-				pUnit.setHasPromotion(gc.getInfoTypeForString(iPromo),True)
+ 	if pPlayer.hasTrait(getInfoType('TRAIT_GRAND_MARSHAL')) and pUnit.getUnitCombatType() in CombatList and not pUnit.isHasPromotion(getInfoType('PROMOTION_CORPORAL')):
+		pUnit.setHasPromotion(gc.getInfoTypeForString('PROMOTION_CORPORAL'),True)
                 
 	if pPlayer.hasTrait(getInfoType('TRAIT_DIVERSE')) and pUnit.getRace() == -1 and pUnit.isAlive() and not (UnitClassInfo.isUnique() or isWorldUnitClass(UnitClass)):
 		iChance = 20 
@@ -167,7 +167,7 @@ def onUnitPromoted(self, argsList):
 	Generic		= self.Promotions["Generic"]
 	UnitAI		= self.UnitAI
 	CombatList  = [getInfoType('UNITCOMBAT_ADEPT'),getInfoType('UNITCOMBAT_ARCHER'),getInfoType('UNITCOMBAT_DISCIPLE'),getInfoType('UNITCOMBAT_MELEE'),getInfoType('UNITCOMBAT_MOUNTED'),getInfoType('UNITCOMBAT_RECON')]
-	PromotList  = ['PROMOTION_CORPORAL','PROMOTION_SEARGENT','PROMOTION_MASTER_SEARGENT','PROMOTION_CAPTAIN','PROMOTION_GENERAL']
+	PromotList  = ['PROMOTION_SEARGENT','PROMOTION_MASTER_SEARGENT','PROMOTION_CAPTAIN','PROMOTION_GENERAL']
 	
 	if pPlayer.hasTrait(getInfoType('TRAIT_GRAND_MARSHAL')) and pUnit.getUnitCombatType() in CombatList:
 		for iPromo in PromotList:

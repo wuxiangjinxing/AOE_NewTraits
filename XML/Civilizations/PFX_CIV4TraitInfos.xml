@@ -5,7 +5,7 @@
 <!-- -->
 <!-- Leader Trait Infos -->
 <Civ4TraitInfos xmlns="x-schema:PFX_CIV4CivilizationsSchema.xml">
-	<TraitInfos>
+	<TraitInfos>	
 		<TraitInfo>		<!-- Diviner -->
 			<Type>TRAIT_DIVINER</Type>
 			<TraitClass>TRAITCLASS_PERSONALITY</TraitClass>
@@ -13,7 +13,6 @@
 			<Civilopedia>TXT_KEY_TRAIT_DIVINER_PEDIA</Civilopedia>
 			<ShortDescription>TXT_KEY_TRAIT_DIVINER_SHORT</ShortDescription>
 			<Help>TXT_KEY_TRAIT_DIVINER_HELP</Help>
-			<iMaxAnarchy>0</iMaxAnarchy>
 			<FreePromotions>
 				<FreePromotion>
 					<PromotionType>PROMOTION_COURAGE</PromotionType>

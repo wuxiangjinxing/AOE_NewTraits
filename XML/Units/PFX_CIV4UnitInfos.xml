@@ -9,7 +9,6 @@
 		<UnitInfo>        <!-- Decius (Great Commander) -->
 			<Type>UNIT_DECIUS</Type>
 			<iMoves>3</iMoves>
-			<bImmortal>1</bImmortal>
 			<Special>SPECIALUNIT_PEOPLE</Special>
 			<bOnlyDefensive>1</bOnlyDefensive>			
 			<FreePromotions>
@@ -18,13 +17,26 @@
 					<iNumApplied>1</iNumApplied>
 				</FreePromotion>
 				<FreePromotion>
+					<PromotionType>PROMOTION_GC_LEADERSHIP</PromotionType>
+					<iNumApplied>1</iNumApplied>
+				</FreePromotion>
+				<FreePromotion>
+					<PromotionType>PROMOTION_GC_BATTLE_COMMAND1</PromotionType>
+					<iNumApplied>1</iNumApplied>
+				</FreePromotion>
+				<FreePromotion>
+					<PromotionType>PROMOTION_CAPTAIN</PromotionType>
+					<iNumApplied>1</iNumApplied>
+				</FreePromotion>				
+				<FreePromotion>
 					<PromotionType>PROMOTION_DIMENSIONAL1</PromotionType>
 					<iNumApplied>1</iNumApplied>
 				</FreePromotion>
 			</FreePromotions>
 			<iCombatDefense>5</iCombatDefense>
 			<iCommandLimit>3</iCommandLimit>
-			<iPowerMult>3</iPowerMult>			
+			<iPowerMult>3</iPowerMult>
+			<PythonOnDeath>onDeathAuric(pCaster)</PythonOnDeath>
 		</UnitInfo>
 	</UnitInfos>
 </Civ4UnitInfos>
