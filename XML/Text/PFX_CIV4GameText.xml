@@ -148,5 +148,13 @@
 		<German>[NEWLINE][ICON_BULLET]Gains one free great commander after building your capital.[NEWLINE][ICON_BULLET]Military units gain free rank promotions based on levels.</German>
 		<Italian>[NEWLINE][ICON_BULLET]Gains one free great commander after building your capital.[NEWLINE][ICON_BULLET]Military units gain free rank promotions based on levels.</Italian>
 		<Spanish>[NEWLINE][ICON_BULLET]Gains one free great commander after building your capital.[NEWLINE][ICON_BULLET]Military units gain free rank promotions based on levels.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_POPUP_DECIUS_CREATION</Tag>
+		<English>Decius, a man brave, loyal, and ever steadfast. Your destiny is in your hands.</English>
+		<French>Decius, a man brave, loyal, and ever steadfast. Your destiny is in your hands.</French>
+		<German>Decius, a man brave, loyal, and ever steadfast. Your destiny is in your hands.</German>
+		<Italian>Decius, a man brave, loyal, and ever steadfast. Your destiny is in your hands.</Italian>
+		<Spanish>Decius, a man brave, loyal, and ever steadfast. Your destiny is in your hands.</Spanish>
 	</TEXT>	
 </Civ4GameText>

@@ -36,6 +36,8 @@
 			<iCombatDefense>5</iCombatDefense>
 			<iCommandLimit>3</iCommandLimit>
 			<iPowerMult>3</iPowerMult>
+			<Image>art/interface/popups/Decius.dds</Image>
+			<Quote>TXT_KEY_POPUP_DECIUS_CREATION</Quote>			
 			<PythonOnDeath>onDeathAuric(pCaster)</PythonOnDeath>
 		</UnitInfo>
 	</UnitInfos>
