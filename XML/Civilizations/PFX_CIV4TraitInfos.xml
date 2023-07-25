@@ -96,6 +96,50 @@
 			<Help>TXT_KEY_TRAIT_GRAND_MARSHAL_HELP</Help>
 			<iFreeXPFromCombat>1</iFreeXPFromCombat>
 			<FreeBuilding>BUILDINGCLASS_COMMAND_POST</FreeBuilding>		
+		</TraitInfo>
+		<TraitInfo>		<!-- Strategist -->
+			<Type>TRAIT_STRATEGIST</Type>
+			<NextTrait>TRAIT_STRATEGIST2</NextTrait>
+			<iLevel>1</iLevel>
+			<TraitClass>TRAITCLASS_EMERGENT</TraitClass>
+			<FreePromotions>
+				<FreePromotion>
+					<PromotionType>PROMOTION_MOBILITY1</PromotionType>
+					<bFreePromotion>1</bFreePromotion>
+				</FreePromotion>
+			</FreePromotions>
+			<bAgnostic>1</bAgnostic>
+		</TraitInfo>
+		<TraitInfo>		<!-- Strategist -->
+			<Type>TRAIT_STRATEGIST2</Type>
+			<Description>TXT_KEY_TRAIT_STRATEGIST</Description>
+			<ShortDescription>TXT_KEY_TRAIT_STRATEGIST_SHORT</ShortDescription>
+			<Civilopedia>TXT_KEY_TRAIT_STRATEGIST2_PEDIA</Civilopedia>		
+			<NextTrait>TRAIT_STRATEGIST3</NextTrait>
+			<iLevel>2</iLevel>
+			<iMinRequiredPoints>300</iMinRequiredPoints>
+			<TraitClass>TRAITCLASS_EMERGENT</TraitClass>
+			<iHappiness>1</iHappiness>
+			<iUpkeepModifier>-50</iUpkeepModifier>
+			<ExtraYieldThresholds>
+				<iExtraYieldThreshold>2</iExtraYieldThreshold>
+				<iExtraYieldThreshold>0</iExtraYieldThreshold>
+				<iExtraYieldThreshold>0</iExtraYieldThreshold>
+			</ExtraYieldThresholds>
+			<bOverflowProduction>1</bOverflowProduction>
+		</TraitInfo>
+		<TraitInfo>		<!-- Strategist -->
+			<Type>TRAIT_STRATEGIST3</Type>
+			<Description>TXT_KEY_TRAIT_STRATEGIST</Description>
+			<ShortDescription>TXT_KEY_TRAIT_STRATEGIST_SHORT</ShortDescription>
+			<Help>TXT_KEY_TRAIT_STRATEGIST3_HELP</Help>
+			<Civilopedia>TXT_KEY_TRAIT_STRATEGIST3_PEDIA</Civilopedia>
+			<iLevel>3</iLevel>
+			<iMinRequiredPoints>3000</iMinRequiredPoints>
+			<TraitClass>TRAITCLASS_EMERGENT</TraitClass>		
+			<iGreatGeneralRateModifier>100</iGreatGeneralRateModifier>
+			<iDomesticGreatGeneralRateModifier>100</iDomesticGreatGeneralRateModifier>
+			<iLevelExperienceModifier>-25</iLevelExperienceModifier>
 		</TraitInfo>		
 	</TraitInfos> 
 </Civ4TraitInfos>

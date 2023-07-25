@@ -594,5 +594,14 @@
 				</Trait>				
 			</Traits>
 		</LeaderHeadInfo>
+		<LeaderHeadInfo> 		<!-- Ophelia Rosenthal --><!-- Multi-civ leader -->
+			<Type>LEADER_OPHELIA</Type>
+			<Traits>
+				<Trait>
+					<TraitType>TRAIT_TOLERANT</TraitType>
+					<bTrait>1</bTrait>
+				</Trait>				
+			</Traits>
+		</LeaderHeadInfo>		
 	</LeaderHeadInfos>		
 </Civ4LeaderHeadInfos>

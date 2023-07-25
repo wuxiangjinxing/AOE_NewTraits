@@ -668,6 +668,7 @@
 	<ElementType name="iLevel" content="textOnly" dt:type="int"/>
 	<ElementType name="iOnGainCounterModifier" content="textOnly" dt:type="int"/>
 	<ElementType name="iMinRequiredPoints" content="textOnly" dt:type="int"/>
+	<ElementType name="bCanBeLost" content="textOnly" dt:type="boolean"/>
 	<!--Mercenary-->
 	<ElementType name="iMercenaryCostDecrease" content="textOnly" dt:type="int"/>
 	<ElementType name="bContractOut" content="textOnly" dt:type="boolean"/>
@@ -683,6 +684,7 @@
 		<element type="iMinRequiredPoints" minOccurs="0"/>
 		<element type="Type"/>
 		<element type="bForceOverwrite"/>
+		<element type="bCanBeLost"/>
 		<element type="bTypeDependency"/>
 		<element type="AndDependencyTypes"/>
 		<element type="OrDependencyTypes"/>
@@ -1064,9 +1066,7 @@
 		<element type="CounterChange"/>
 	</ElementType>
 	<ElementType name="TraitHookType" content="textOnly"/>
-	<ElementType name="TraitHookTypes" content="eltOnly">
-		<element type="TraitHookType"/>
-	</ElementType>
+	<ElementType name="TraitClassType" content="textOnly"/>
 	<ElementType name="iTurnModulo" content="textOnly" dt:type="int"/>
 	
 	<ElementType name="PrereqTrainXPCap" content="eltOnly">
@@ -1103,6 +1103,12 @@
 	<ElementType name="bKilledOutsideBorders" content="textOnly" dt:type="boolean"/>
 	<ElementType name="bPrereqPeace" content="textOnly" dt:type="boolean"/>
 	<ElementType name="bPrereqWar" content="textOnly" dt:type="boolean"/>
+	<ElementType name="bPrereqOppositeAlignment" content="textOnly" dt:type="boolean"/>
+	<ElementType name="bPrereqOppositeEthicalAlignment" content="textOnly" dt:type="boolean"/>
+	<ElementType name="bPrereqHill" content="textOnly" dt:type="boolean"/>
+	<ElementType name="bPrereqPeak" content="textOnly" dt:type="boolean"/>
+	<ElementType name="bFirst" content="textOnly" dt:type="boolean"/>
+	<ElementType name="bOncePerPlayer" content="textOnly" dt:type="boolean"/>
 	<ElementType name="bPrereqCoastalCity" content="textOnly" dt:type="boolean"/>
 	<ElementType name="bPrereqShrine" content="textOnly" dt:type="boolean"/>
 	<ElementType name="bPrereqWonder" content="textOnly" dt:type="boolean"/>
@@ -1122,6 +1128,8 @@
 	<ElementType name="PrereqBuildingClassType" content="textOnly"/>
 	<ElementType name="PrereqCultureLevel" content="textOnly"/>
 	<ElementType name="PrereqReligion" content="textOnly"/>
+	<ElementType name="PrereqOldReligion" content="textOnly"/>
+	<ElementType name="PrereqTech" content="textOnly"/>
 	<ElementType name="PrereqHurryType" content="textOnly"/>
 	<ElementType name="PrereqBonusType" content="textOnly"/>
 	<ElementType name="BonusMultiplierType" content="textOnly"/>
@@ -1159,7 +1167,8 @@
 	<ElementType name="TraitTriggerInfo" content="eltOnly"  order="many">
 		<element type="Type"/>
 		<element type="CounterChanges"/>
-		<element type="TraitHookTypes"/>
+		<element type="TraitHookType"/>
+		<element type="TraitClassType"/>
 		<element type="iTurnModulo" minOccurs="0"/>
 		<element type="iPrereqNumCities" minOccurs="0"/>
 		<element type="iPrereqPopulation" minOccurs="0"/>
@@ -1184,6 +1193,12 @@
 		<element type="bKilledOutsideBorders" minOccurs="0"/>
 		<element type="bPrereqPeace" minOccurs="0"/>
 		<element type="bPrereqWar" minOccurs="0"/>
+		<element type="bPrereqOppositeAlignment" minOccurs="0"/>
+		<element type="bPrereqOppositeEthicalAlignment" minOccurs="0"/>
+		<element type="bPrereqHill" minOccurs="0"/>
+		<element type="bPrereqPeak" minOccurs="0"/>
+		<element type="bFirst" minOccurs="0"/>
+		<element type="bOncePerPlayer" minOccurs="0"/>
 		<element type="bPrereqCoastalCity" minOccurs="0"/>
 		<element type="bPrereqShrine" minOccurs="0"/>
 		<element type="bPrereqWonder" minOccurs="0"/>
@@ -1205,6 +1220,8 @@
 		<element type="PrereqBuildingClassType" minOccurs="0"/> <!-- Default: NO_BUILDINGCLASS -->
 		<element type="PrereqCultureLevel" minOccurs="0"/> <!-- Default: NO_CULTURELEVEL -->
 		<element type="PrereqReligion" minOccurs="0"/> <!-- Default: NO_RELIGION -->
+		<element type="PrereqOldReligion" minOccurs="0"/> <!-- Default: NO_RELIGION -->
+		<element type="PrereqTech" minOccurs="0"/> <!-- Default: NO_TECH -->
 		<element type="bPrereqCultureDecrease" minOccurs="0"/>
 		<element type="PrereqHurryType" minOccurs="0"/> <!-- Default: NO_HURRY -->
 		<element type="PrereqBonusType" minOccurs="0"/> <!-- Default: NO_BONUS -->
