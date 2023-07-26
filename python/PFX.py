@@ -173,13 +173,6 @@ def onUnitPromoted(self, argsList):
 		for iPromo in PromotList:
 			if pUnit.getLevel() >= gc.getPromotionInfo(getInfoType(iPromo)).getMinLevel() and not pUnit.isHasPromotion(getInfoType(iPromo)):
 				pUnit.setHasPromotion(gc.getInfoTypeForString(iPromo),True)
-				
-	if pPlayer.hasTrait(getInfoType('TRAIT_STRATEGIST3')):
-		iChance = pUnit.getLevel() * 10
-		if CyGame().getSorenRandNum(100, "Bob") <= iChance:
-			if not pUnit.isHasPromotion(getInfoType('PROMOTION_HERO')):
-				pUnit.setHasPromotion(gc.getInfoTypeForString('PROMOTION_HERO'),True)
-			pUnit.changeFreePromotionPick(1)
 		
 def onCityBuilt(self, argsList):
 	'City Built'
