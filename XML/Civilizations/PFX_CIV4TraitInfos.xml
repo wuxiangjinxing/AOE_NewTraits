@@ -96,6 +96,89 @@
 			<Help>TXT_KEY_TRAIT_GRAND_MARSHAL_HELP</Help>
 			<iFreeXPFromCombat>1</iFreeXPFromCombat>
 			<FreeBuilding>BUILDINGCLASS_COMMAND_POST</FreeBuilding>		
+		</TraitInfo>
+		<TraitInfo>		<!-- Return of winter -->
+			<Type>TRAIT_RETURN_OF_WINTER</Type>
+			<TraitClass>TRAITCLASS_PERSONALITY</TraitClass>
+			<Description>TRAIT_RETURN_OF_WINTER</Description>
+			<Civilopedia>TRAIT_RETURN_OF_WINTER_PEDIA</Civilopedia>
+			<ShortDescription>TRAIT_RETURN_OF_WINTER_SHORT</ShortDescription>
+			<Help>TRAIT_RETURN_OF_WINTER_HELP</Help>		
+		</TraitInfo>
+		<TraitInfo>		<!-- Caretaker -->
+			<Type>TRAIT_ZARIA_INFO</Type>
+			<NextTrait>TRAIT_ZARIA_INFO2</NextTrait>
+			<iLevel>1</iLevel>
+			<TraitClass>TRAITCLASS_EMERGENT</TraitClass>
+			<iUpkeepModifier>10</iUpkeepModifier>
+		</TraitInfo>
+		<TraitInfo>		<!-- Caretaker -->
+			<Type>TRAIT_ZARIA_INFO2</Type>
+			<Description>TXT_KEY_TRAIT_ZARIA_INFO</Description>
+			<Civilopedia>TXT_KEY_TRAIT_ZARIA_INFO_PEDIA</Civilopedia>
+			<ShortDescription>TXT_KEY_TRAIT_ZARIA_INFO_SHORT</ShortDescription>
+			<Help>TXT_KEY_TRAIT_ZARIA_INFO2_HELP</Help>
+			<NextTrait>TRAIT_ZARIA_INFO3</NextTrait>
+			<iLevel>2</iLevel>
+			<iMinRequiredPoints>300</iMinRequiredPoints>
+			<TraitClass>TRAITCLASS_EMERGENT</TraitClass>
+			<iHappiness>2</iHappiness>
+			<FreeBonuses>
+				<FreeBonus>
+					<BonusType>BONUS_MANA_MIND</BonusType>
+					<bFreeBonus>1</bFreeBonus>
+				</FreeBonus>			
+			</FreeBonuses>
+			<FreePromotions>
+				<FreePromotion>
+					<PromotionType>PROMOTION_MIND1</PromotionType>
+					<bFreePromotion>1</bFreePromotion>
+				</FreePromotion>
+				<FreePromotion>
+					<PromotionType>PROMOTION_MIND2</PromotionType>
+					<bFreePromotion>1</bFreePromotion>
+				</FreePromotion>			
+			</FreePromotions>
+			<FreePromotionUnitCombats>
+				<FreePromotionUnitCombat>
+					<UnitCombatType>UNITCOMBAT_DISCIPLE</UnitCombatType>
+					<bFreePromotionUnitCombat>1</bFreePromotionUnitCombat>
+				</FreePromotionUnitCombat>
+			</FreePromotionUnitCombats>			
+		</TraitInfo>
+		<TraitInfo>		<!-- Caretaker -->
+			<Type>TRAIT_ZARIA_INFO3</Type>
+			<Description>TXT_KEY_TRAIT_ZARIA_INFO</Description>
+			<Civilopedia>TXT_KEY_TRAIT_ZARIA_INFO_PEDIA</Civilopedia>
+			<ShortDescription>TXT_KEY_TRAIT_ZARIA_INFO_SHORT</ShortDescription>
+			<Help>TXT_KEY_TRAIT_ZARIA_INFO3_HELP</Help>
+			<iLevel>3</iLevel>
+			<iMinRequiredPoints>3000</iMinRequiredPoints>
+			<TraitClass>TRAITCLASS_EMERGENT</TraitClass>
+			<FreeSpecialistsStateReligion>
+				<FreeSpecialistStateReligion>
+					<SpecialistType>SPECIALIST_HEALER</SpecialistType>
+					<bFreeSpecialistStateReligion>1</bFreeSpecialistStateReligion>
+				</FreeSpecialistStateReligion>
+			</FreeSpecialistsStateReligion>			
+			<SpecialistHappinessChanges>
+				<SpecialistHappinessChange>
+					<SpecialistType>SPECIALIST_HEALER</SpecialistType>
+					<iHappiness>1</iHappiness>
+				</SpecialistHappinessChange>
+			</SpecialistHappinessChanges>			
+			<UnitClassPlayerInstancesChanges>
+				<UnitClassPlayerInstancesChange>
+					<UnitClassType>UNITCLASS_ADJUNCT</UnitClassType>
+					<iPlayerInstancesChange>4</iPlayerInstancesChange>
+				</UnitClassPlayerInstancesChange>
+			</UnitClassPlayerInstancesChanges>
+			<UnitClassPlayerInstancesChanges>
+				<UnitClassPlayerInstancesChange>
+					<UnitClassType>UNITCLASS_CARETAKER_MATRON</UnitClassType>
+					<iPlayerInstancesChange>4</iPlayerInstancesChange>
+				</UnitClassPlayerInstancesChange>
+			</UnitClassPlayerInstancesChanges>			
 		</TraitInfo>		
 	</TraitInfos> 
 </Civ4TraitInfos>

@@ -27,6 +27,13 @@ Destiny(Decius):
 	
 Grand Marshall(Decius):
 	Create one great commander when building your capital.
+	Military units automatically get commanding-chain promotions.
 	Free command post in each city.
+	
+Return of Winter(Braedon the Laconic):
+	Capture all defeated barbarian units.
+	
+Caretaker(Zaria):
+	Upgradable
 
 ;[compatible]

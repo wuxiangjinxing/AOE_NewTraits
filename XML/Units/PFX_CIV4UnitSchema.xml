@@ -612,6 +612,15 @@
 	<ElementType name="UnitCombatCaptureRates" content="eltOnly">
 		<element type="UnitCombatCaptureRate" minOccurs="0" maxOccurs="*"/>
 	</ElementType>
+	<ElementType name="NotCapturedUnitCombatType" content="textOnly"/>
+	<ElementType name="bNotCapturedUnitCombat" content="textOnly" dt:type="int"/>
+	<ElementType name="NotCapturedUnitCombat" content="eltOnly">
+		<element type="NotCapturedUnitCombatType"/>
+		<element type="bNotCapturedUnitCombat"/>
+	</ElementType>
+	<ElementType name="NotCapturedUnitCombats" content="eltOnly">
+		<element type="NotCapturedUnitCombat" minOccurs="0" maxOccurs="*"/>
+	</ElementType>
 	<ElementType name="iUnitCombatCollateralImmune" content="textOnly" dt:type="int"/>
 	<ElementType name="UnitCombatCollateralImmune" content="eltOnly">
 		<element type="UnitCombatType"/>

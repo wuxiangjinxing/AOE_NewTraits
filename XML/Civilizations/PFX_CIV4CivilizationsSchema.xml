@@ -673,6 +673,7 @@
 	<ElementType name="iMercenaryCostDecrease" content="textOnly" dt:type="int"/>
 	<ElementType name="bContractOut" content="textOnly" dt:type="boolean"/>
 	<ElementType name="iRitualProductionModifier" content="textOnly" dt:type="int"/>
+	<ElementType name="iMilitaryProductionModifier" content="textOnly" dt:type="int"/>
 	<ElementType name="FreeBuilding" content="textOnly"/>
 	
 	
@@ -694,6 +695,7 @@
 		<element type="Help"/>
 		<element type="iHealth"/>
 		<element type="iRitualProductionModifier"/>
+		<element type="iMilitaryProductionModifier"/>
 		<element type="iHappiness"/>
 		<element type="iMaxAnarchy"/>
 		<element type="iUpkeepModifier"/>
@@ -1015,8 +1017,12 @@
 	<ElementType name="Civ4TraitClassInfos" content="eltOnly">
 		<element type="TraitClassInfos" minOccurs="0"/>
 	</ElementType>
-	<ElementType name="LeaderClassInfo" content="eltOnly">
+	<ElementType name="LeaderClassInfo" content="eltOnly" order="many">
 		<element type="Type"/>
+		<element type="bForceOverwrite"/>
+		<element type="bTypeDependency"/>
+		<element type="AndDependencyTypes"/>
+		<element type="OrDependencyTypes"/>
 		<element type="Description"/>
 		<element type="LeaderStatus"/>
 		<element type="MaxTraitsPerClass" minOccurs="0"/> <!-- Default: MAX_INT -->
@@ -1155,6 +1161,10 @@
 	<ElementType name="PrereqKilledNotRaceType" content="textOnly"/>
 	<ElementType name="iPrereqKilledMinLevel" content="textOnly" dt:type="int"/>
 	<ElementType name="iPrereqKilledMaxLevel" content="textOnly" dt:type="int"/>
+	<ElementType name="iPrereqAlignment" content="textOnly"/>
+	<ElementType name="iPrereqEthicalAlignment" content="textOnly"/>
+	<ElementType name="iPrereqKilledAlignment" content="textOnly"/>
+	<ElementType name="iPrereqKilledEthicalAlignment" content="textOnly"/>
 	<ElementType name="iPrereqMinAlignment" content="textOnly" dt:type="int"/>
 	<ElementType name="iPrereqMaxAlignment" content="textOnly" dt:type="int"/>
 	<ElementType name="iPrereqKilledMinAlignment" content="textOnly" dt:type="int"/>
@@ -1249,6 +1259,10 @@
 		<element type="iPrereqMaxLevel" minOccurs="0"/> <!-- Default: 0 -->
 		<element type="iPrereqKilledMinLevel" minOccurs="0"/> <!-- Default: 0 -->
 		<element type="iPrereqKilledMaxLevel" minOccurs="0"/> <!-- Default: 0 -->
+		<element type="iPrereqAlignment" minOccurs="0"/> <!-- Default: 0 -->
+		<element type="iPrereqKilledAlignment" minOccurs="0"/> <!-- Default: 0 -->
+		<element type="iPrereqEthicalAlignment" minOccurs="0"/> <!-- Default: 0 -->
+		<element type="iPrereqKilledEthicalAlignment" minOccurs="0"/> <!-- Default: 0 -->
 		<element type="iPrereqMinAlignment" minOccurs="0"/> <!-- Default: 0 -->
 		<element type="iPrereqMaxAlignment" minOccurs="0"/> <!-- Default: 0 -->
 		<element type="iPrereqKilledMinAlignment" minOccurs="0"/> <!-- Default: 0 -->

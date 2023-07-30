@@ -594,5 +594,14 @@
 				</Trait>				
 			</Traits>
 		</LeaderHeadInfo>
+		<LeaderHeadInfo>		<!-- Braeden -->
+			<Type>LEADER_BRAEDEN</Type>
+			<Traits>
+				<Trait>
+					<TraitType>TRAIT_RETURN_OF_WINTER</TraitType>
+					<bTrait>1</bTrait>
+				</Trait>				
+			</Traits>
+		</LeaderHeadInfo>			
 	</LeaderHeadInfos>		
 </Civ4LeaderHeadInfos>

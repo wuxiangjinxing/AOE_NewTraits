@@ -12,13 +12,10 @@ import CvWorldBuilderScreen
 import CvAdvisorUtils
 import CvTechChooser
 import pickle
-
 import CvIntroMovieScreen
 import CustomFunctions
 
-
 # globals
-
 cf = CustomFunctions.CustomFunctions()
 gc = CyGlobalContext()
 localText = CyTranslator()
@@ -26,7 +23,6 @@ PyPlayer = PyHelpers.PyPlayer
 PyInfo = PyHelpers.PyInfo
 getInfoType = gc.getInfoTypeForString
 getPlot	= CyMap().plot
-
 getPlayer = gc.getPlayer
 
 def GreatLeaderFollowerType(iPlayer):
@@ -92,7 +88,7 @@ def onCityAcquired(self, argsList): # triggered whenever a city is captured (bef
 				if pPrevious.hasTrait(iTrait) and (gc.getTraitInfo(iTrait).isSelectable()) and not pPlayer.hasTrait(iTrait):
 					if gc.getLeaderHeadInfo(pPlayer.getLeaderType()).getPermanentTrait() != iTrait:
 						pPlayer.setHasTrait(iTrait,True,-1,True,True)
-                        
+						
 		if pPlayer.hasTrait(getInfoType('TRAIT_ABIDER')):
 			for pLoopUnit in PyPlayer(iNewOwner).getUnitList():
 				pLoopUnit.changeFreePromotionPick(1)
@@ -100,7 +96,7 @@ def onCityAcquired(self, argsList): # triggered whenever a city is captured (bef
 		if pPlayer.hasTrait(getInfoType('TRAIT_EXONERATOR')):
 			for pLoopUnit in PyPlayer(iPreviousOwner).getUnitList():
 				newUnit = pPlayer.initUnit(pLoopUnit.getUnitType(), pLoopUnit.getX(), pLoopUnit.getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
-                newUnit.convert(pLoopUnit)    
+				newUnit.convert(pLoopUnit)    
 					
 def onUnitCreated(self, argsList):
 	'Unit Completed'
@@ -227,15 +223,59 @@ def onBeginPlayerTurn(self, argsList):
 	is_decius = 0
 	
 	for iTrait in TraitList:
-		if pPlayer.hasTrait(getInfoType(iTrait)):
-			pPlayer.setHasTrait(getInfoType(iTrait),False,-1,True,True)
+		if hasTrait(getInfoType(iTrait)):
+			pPlayer.setHasTrait(getInfoType(iTrait),False)
 			is_decius = 1
-			
+	
 	if is_decius == 1:
 		if pPlayer.getAlignment() == gc.getInfoTypeForString('ALIGNMENT_EVIL'):
-			pPlayer.setHasTrait(getInfoType('TRAIT_USURPER'),True,-1,True,True)
+			pPlayer.setHasTrait(getInfoType('TRAIT_USURPER'),True)
 		elif pPlayer.getAlignment() == gc.getInfoTypeForString('ALIGNMENT_GOOD'):
-			pPlayer.setHasTrait(getInfoType('TRAIT_EXONERATOR'),True,-1,True,True)
+			pPlayer.setHasTrait(getInfoType('TRAIT_EXONERATOR'),True)
 		else:
-			pPlayer.setHasTrait(getInfoType('TRAIT_ABIDER'),True,-1,True,True)
-        
+			pPlayer.setHasTrait(getInfoType('TRAIT_ABIDER'),True)
+			
+def onUnitKilled(self, argsList):
+	'Unit Killed'
+	pUnit, iAttacker = argsList
+	gc               = CyGlobalContext()
+	cf               = self.cf
+	map              = CyMap()
+	game             = CyGame()
+	iPlayer          = pUnit.getOwner()
+	iLoserPlayer     = pUnit.getOwner() # getUnitList() cannot be used with pPlayer	
+	player           = PyPlayer(iPlayer)
+	attacker         = PyPlayer(iAttacker)
+	pPlayer          = gc.getPlayer(iPlayer)
+	Civ              = self.Civilizations
+	Rel              = self.Religions
+	Promo            = self.Promotions["Effects"]
+	Generic          = self.Promotions["Generic"]
+	Hero             = self.Heroes
+	iCiv             = pPlayer.getCivilizationType()
+	iRel             = pUnit.getReligion()
+	iUnitType        = pUnit.getUnitType()
+	iUnitCombat      = pUnit.getUnitCombatType()
+	# iOwner           = pUnit.getOwner() # Ronkhar: duplicate of iPlayer
+	pPlot            = pUnit.plot()
+	getPlot          = map.plot
+	giftUnit         = cf.giftUnit
+	getXP            = pUnit.getExperienceTimes100
+	hasPromo         = pUnit.isHasPromotion
+	Tech             = self.Techs
+	Frozen           = self.Units["Frozen"]
+	Infernal         = self.Units["Infernal"]
+	Mercurian        = self.Units["Mercurian"]
+	Building         = self.Buildings
+	UnitCombat       = self.UnitCombats
+	addMsg           = CyInterface().addMessage
+	getText          = CyTranslator().getText
+	iNoAI            = UnitAITypes.NO_UNITAI
+	iSouth           = DirectionTypes.DIRECTION_SOUTH
+	randNum          = CyGame().getSorenRandNum
+	
+	pAttacker = gc.getPlayer(iAttacker)
+	if pPlayer.isBarbarian() and pAttacker.hasTrait(getInfoType('TRAIT_RETURN_OF_WINTER')):
+		newUnit = pAttacker.initUnit(pUnit.getUnitType(), pUnit.getX(), pUnit.getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
+		newUnit.convert(pUnit)    		
+		

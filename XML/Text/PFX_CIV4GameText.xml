@@ -23,11 +23,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_TRAIT_DIVINER_HELP</Tag>
-		<English>[NEWLINE][ICON_BULLET]Gains one melee follower (warrior/axeman/champion/phalanx) after conquering a city.  Follower type depends on metal-working technique level.</English>
-		<French>[NEWLINE][ICON_BULLET]Gains one melee follower (warrior/axeman/champion/phalanx) after conquering a city.  Follower type depends on metal-working technique level.</French>
-		<German>[NEWLINE][ICON_BULLET]Gains one melee follower (warrior/axeman/champion/phalanx) after conquering a city.  Follower type depends on metal-working technique level.</German>
-		<Italian>[NEWLINE][ICON_BULLET]Gains one melee follower (warrior/axeman/champion/phalanx) after conquering a city.  Follower type depends on metal-working technique level.</Italian>
-		<Spanish>[NEWLINE][ICON_BULLET]Gains one melee follower (warrior/axeman/champion/phalanx) after conquering a city.  Follower type depends on metal-working technique level.</Spanish>
+		<English>[NEWLINE][ICON_BULLET]Gains one melee follower (warrior/axeman/champion/phalanx) after conquering a city. Follower type depends on metal-working technique level</English>
+		<French>[NEWLINE][ICON_BULLET]Gains one melee follower (warrior/axeman/champion/phalanx) after conquering a city. Follower type depends on metal-working technique level</French>
+		<German>[NEWLINE][ICON_BULLET]Gains one melee follower (warrior/axeman/champion/phalanx) after conquering a city. Follower type depends on metal-working technique level</German>
+		<Italian>[NEWLINE][ICON_BULLET]Gains one melee follower (warrior/axeman/champion/phalanx) after conquering a city. Follower type depends on metal-working technique level</Italian>
+		<Spanish>[NEWLINE][ICON_BULLET]Gains one melee follower (warrior/axeman/champion/phalanx) after conquering a city. Follower type depends on metal-working technique level</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_TRAIT_DIVERSE</Tag>
@@ -47,11 +47,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_TRAIT_DIVERSE_HELP</Tag>
-		<English>[NEWLINE][ICON_BULLET]Units can come from different races.</English>
-		<French>[NEWLINE][ICON_BULLET]Units can come from different races.</French>
-		<German>[NEWLINE][ICON_BULLET]Units can come from different races.</German>
-		<Italian>[NEWLINE][ICON_BULLET]Units can come from different races.</Italian>
-		<Spanish>[NEWLINE][ICON_BULLET]Units can come from different races.</Spanish>
+		<English>[NEWLINE][ICON_BULLET]Units can come from different races</English>
+		<French>[NEWLINE][ICON_BULLET]Units can come from different races</French>
+		<German>[NEWLINE][ICON_BULLET]Units can come from different races</German>
+		<Italian>[NEWLINE][ICON_BULLET]Units can come from different races</Italian>
+		<Spanish>[NEWLINE][ICON_BULLET]Units can come from different races</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_TRAIT_ABIDER</Tag>
@@ -71,11 +71,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_TRAIT_ABIDER_HELP</Tag>
-		<English>[NEWLINE][ICON_BULLET]All your units get one free promotion after conquering a civilization.</English>
-		<French>[NEWLINE][ICON_BULLET]All your units get one free promotion after conquering a civilization.</French>
-		<German>[NEWLINE][ICON_BULLET]All your units get one free promotion after conquering a civilization.</German>
-		<Italian>[NEWLINE][ICON_BULLET]All your units get one free promotion after conquering a civilization.</Italian>
-		<Spanish>[NEWLINE][ICON_BULLET]All your units get one free promotion after conquering a civilization.</Spanish>
+		<English>[NEWLINE][ICON_BULLET]All your units get one free promotion after conquering a civilization</English>
+		<French>[NEWLINE][ICON_BULLET]All your units get one free promotion after conquering a civilization</French>
+		<German>[NEWLINE][ICON_BULLET]All your units get one free promotion after conquering a civilization</German>
+		<Italian>[NEWLINE][ICON_BULLET]All your units get one free promotion after conquering a civilization</Italian>
+		<Spanish>[NEWLINE][ICON_BULLET]All your units get one free promotion after conquering a civilization</Spanish>
 	</TEXT>	
 	<TEXT>
 		<Tag>TXT_KEY_TRAIT_USURPER</Tag>
@@ -95,11 +95,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_TRAIT_USURPER_HELP</Tag>
-		<English>[NEWLINE][ICON_BULLET]Can acquire historical leader traits from a conquerred civilization.</English>
-		<French>[NEWLINE][ICON_BULLET]Can acquire historical leader traits from a conquerred civilization.</French>
-		<German>[NEWLINE][ICON_BULLET]Can acquire historical leader traits from a conquerred civilization.</German>
-		<Italian>[NEWLINE][ICON_BULLET]Can acquire historical leader traits from a conquerred civilization.</Italian>
-		<Spanish>[NEWLINE][ICON_BULLET]Can acquire historical leader traits from a conquerred civilization.</Spanish>
+		<English>[NEWLINE][ICON_BULLET]Can acquire historical leader traits from a conquerred civilization</English>
+		<French>[NEWLINE][ICON_BULLET]Can acquire historical leader traits from a conquerred civilization</French>
+		<German>[NEWLINE][ICON_BULLET]Can acquire historical leader traits from a conquerred civilization</German>
+		<Italian>[NEWLINE][ICON_BULLET]Can acquire historical leader traits from a conquerred civilization</Italian>
+		<Spanish>[NEWLINE][ICON_BULLET]Can acquire historical leader traits from a conquerred civilization</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_TRAIT_EXONERATOR</Tag>
@@ -119,11 +119,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_TRAIT_EXONERATOR_HELP</Tag>
-		<English>[NEWLINE][ICON_BULLET]Can convert all remaining units from a conquerred civilization.</English>
-		<French>[NEWLINE][ICON_BULLET]Can convert all remaining units from a conquerred civilization.</French>
-		<German>[NEWLINE][ICON_BULLET]Can convert all remaining units from a conquerred civilization.</German>
-		<Italian>[NEWLINE][ICON_BULLET]Can convert all remaining units from a conquerred civilization.</Italian>
-		<Spanish>[NEWLINE][ICON_BULLET]Can convert all remaining units from a conquerred civilization.</Spanish>
+		<English>[NEWLINE][ICON_BULLET]Can convert all remaining units from a conquerred civilization</English>
+		<French>[NEWLINE][ICON_BULLET]Can convert all remaining units from a conquerred civilization</French>
+		<German>[NEWLINE][ICON_BULLET]Can convert all remaining units from a conquerred civilization</German>
+		<Italian>[NEWLINE][ICON_BULLET]Can convert all remaining units from a conquerred civilization</Italian>
+		<Spanish>[NEWLINE][ICON_BULLET]Can convert all remaining units from a conquerred civilization</Spanish>
 	</TEXT>	
 	<TEXT>
 		<Tag>TXT_KEY_TRAIT_GRAND_MARSHAL</Tag>
@@ -143,18 +143,58 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_TRAIT_GRAND_MARSHAL_HELP</Tag>
-		<English>[NEWLINE][ICON_BULLET]Gains one free great commander after building your capital.[NEWLINE][ICON_BULLET]Military units gain free rank promotions based on levels.</English>
-		<French>[NEWLINE][ICON_BULLET]Gains one free great commander after building your capital.[NEWLINE][ICON_BULLET]Military units gain free rank promotions based on levels.</French>
-		<German>[NEWLINE][ICON_BULLET]Gains one free great commander after building your capital.[NEWLINE][ICON_BULLET]Military units gain free rank promotions based on levels.</German>
-		<Italian>[NEWLINE][ICON_BULLET]Gains one free great commander after building your capital.[NEWLINE][ICON_BULLET]Military units gain free rank promotions based on levels.</Italian>
-		<Spanish>[NEWLINE][ICON_BULLET]Gains one free great commander after building your capital.[NEWLINE][ICON_BULLET]Military units gain free rank promotions based on levels.</Spanish>
+		<English>[NEWLINE][ICON_BULLET]Gains one free great commander after building your capital.[NEWLINE][ICON_BULLET]Military units gain free rank promotions based on levels</English>
+		<French>[NEWLINE][ICON_BULLET]Gains one free great commander after building your capital.[NEWLINE][ICON_BULLET]Military units gain free rank promotions based on levels</French>
+		<German>[NEWLINE][ICON_BULLET]Gains one free great commander after building your capital.[NEWLINE][ICON_BULLET]Military units gain free rank promotions based on levels</German>
+		<Italian>[NEWLINE][ICON_BULLET]Gains one free great commander after building your capital.[NEWLINE][ICON_BULLET]Military units gain free rank promotions based on levels</Italian>
+		<Spanish>[NEWLINE][ICON_BULLET]Gains one free great commander after building your capital.[NEWLINE][ICON_BULLET]Military units gain free rank promotions based on levels</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_POPUP_DECIUS_CREATION</Tag>
-		<English>Decius, a man brave, loyal, and ever steadfast. Your destiny is in your hands.</English>
-		<French>Decius, a man brave, loyal, and ever steadfast. Your destiny is in your hands.</French>
-		<German>Decius, a man brave, loyal, and ever steadfast. Your destiny is in your hands.</German>
-		<Italian>Decius, a man brave, loyal, and ever steadfast. Your destiny is in your hands.</Italian>
-		<Spanish>Decius, a man brave, loyal, and ever steadfast. Your destiny is in your hands.</Spanish>
+		<English>Decius, a man brave, loyal, and ever steadfast. Your destiny is in your hands</English>
+		<French>Decius, a man brave, loyal, and ever steadfast. Your destiny is in your hands</French>
+		<German>Decius, a man brave, loyal, and ever steadfast. Your destiny is in your hands</German>
+		<Italian>Decius, a man brave, loyal, and ever steadfast. Your destiny is in your hands</Italian>
+		<Spanish>Decius, a man brave, loyal, and ever steadfast. Your destiny is in your hands</Spanish>
 	</TEXT>
+	<TEXT>
+		<Tag>TRAIT_RETURN_OF_WINTER</Tag>
+		<English>Return of Winter</English>
+		<French>Return of Winter</French>
+		<German>Return of Winter</German>
+		<Italian>Return of Winter</Italian>
+		<Spanish>Return of Winter</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TRAIT_RETURN_OF_WINTER_SHORT</Tag>
+		<English>Row</English>
+		<French>Row</French>
+		<German>Row</German>
+		<Italian>Row</Italian>
+		<Spanish>Row</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TRAIT_RETURN_OF_WINTER_HELP</Tag>
+		<English>[NEWLINE][ICON_BULLET]Can capture defeated barbarian units</English>
+		<French>[NEWLINE][ICON_BULLET]Can capture defeated barbarian units</French>
+		<German>[NEWLINE][ICON_BULLET]Can capture defeated barbarian units</German>
+		<Italian>[NEWLINE][ICON_BULLET]Can capture defeated barbarian units</Italian>
+		<Spanish>[NEWLINE][ICON_BULLET]Can capture defeated barbarian units</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TRAIT_ZARIA_INFO2_HELP</Tag>
+		<English>[NEWLINE][ICON_BULLET]+1 Mind Mana</English>
+		<French>[NEWLINE][ICON_BULLET]+1 Mind Mana</French>
+		<German>[NEWLINE][ICON_BULLET]+1 Mind Mana</German>
+		<Italian>[NEWLINE][ICON_BULLET]+1 Mind Mana</Italian>
+		<Spanish>[NEWLINE][ICON_BULLET]+1 Mind Mana</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TRAIT_ZARIA_INFO3_HELP</Tag>
+		<English>[NEWLINE][ICON_BULLET]Double the national limit of Adjuncts and Caretaker Matrons</English>
+		<French>[NEWLINE][ICON_BULLET]Double the national limit of Adjuncts and Caretaker Matrons</French>
+		<German>[NEWLINE][ICON_BULLET]Double the national limit of Adjuncts and Caretaker Matrons</German>
+		<Italian>[NEWLINE][ICON_BULLET]Double the national limit of Adjuncts and Caretaker Matrons</Italian>
+		<Spanish>[NEWLINE][ICON_BULLET]Double the national limit of Adjuncts and Caretaker Matrons</Spanish>
+	</TEXT>	
 </Civ4GameText>

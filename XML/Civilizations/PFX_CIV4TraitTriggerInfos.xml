@@ -1,0 +1,91 @@
+<?xml version="1.0"?>
+<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by Alex Mantzaris (Firaxis Games) -->
+<!-- Sid Meier's Civilization 4 -->
+<!-- Copyright Firaxis Games 2005 -->
+<!-- -->
+<!-- Basic Infos -->
+<!-- CONFIRMED WORKING INGAME:
+- build improvement
+- cast spell (unit or city)
+- construct building (buildingclass, 
+- gain promo (on levelup, on unit trained, on unit upgraded)
+- kill enemy (unitclass, unitcombat, 
+- train unit
+-->
+
+<Civ4TraitTriggerInfos xmlns="x-schema:PFX_CIV4CivilizationsSchema.xml">
+	<TraitTriggerInfos>
+		<TraitTriggerInfo> <!-- Cast                Inspiration                               Caretaker -->
+			<Type>TRAITTRIGGER_CAST_INSPIRATION</Type>
+			<CounterChanges>
+				<CounterChange>
+					<TraitType>TRAIT_ZARIA_INFO</TraitType>
+					<iModifier>2</iModifier>
+				</CounterChange>
+			</CounterChanges>
+			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>			
+			<TraitHookType>TRAITHOOK_CAST_SPELL</TraitHookType>			
+			<PrereqSpellType>SPELL_INSPIRATION</PrereqSpellType>
+		</TraitTriggerInfo>
+		<TraitTriggerInfo> <!-- Cast                Charm Person                               Caretaker -->
+			<Type>TRAITTRIGGER_CAST_INSPIRATION</Type>
+			<CounterChanges>
+				<CounterChange>
+					<TraitType>TRAIT_ZARIA_INFO</TraitType>
+					<iModifier>5</iModifier>
+				</CounterChange>
+			</CounterChanges>
+			<TraitClassType>TRAITCLASS_EMERGENT</TraitClassType>			
+			<TraitHookType>TRAITHOOK_CAST_SPELL</TraitHookType>			
+			<PrereqSpellType>SPELL_CHARM_PERSON</PrereqSpellType>
+		</TraitTriggerInfo>
+		<TraitTriggerInfo> <!-- Construct           Building gives happiness                       Caretaker -->
+			<Type>TRAITTRIGGER_CONSTRUCT_BUILDING_HAPPINESS</Type>
+			<CounterChanges>
+				<CounterChange>
+					<TraitType>TRAIT_ZARIA_INFO</TraitType>
+					<iModifier>20</iModifier>
+				</CounterChange>
+			</CounterChanges>
+		</TraitTriggerInfo>		
+		<TraitTriggerInfo> <!-- Construct           Building gives health                       Caretaker -->
+			<Type>TRAITTRIGGER_CONSTRUCT_BUILDING_HEALTH</Type>
+			<CounterChanges>
+				<CounterChange>
+					<TraitType>TRAIT_ZARIA_INFO</TraitType>
+					<iModifier>20</iModifier>
+				</CounterChange>
+			</CounterChanges>
+		</TraitTriggerInfo>
+		<TraitTriggerInfo> <!-- Construct           Infirmary                       			Caretaker -->
+			<Type>TRAITTRIGGER_CONSTRUCT_BUILDING_INFIRMARY</Type>
+			<CounterChanges>
+				<CounterChange>
+					<TraitType>TRAIT_ZARIA_INFO</TraitType>
+					<iModifier>50</iModifier>
+				</CounterChange>
+			</CounterChanges>
+			<TraitClassType>TRAITCLASS_PERSONALITY</TraitClassType>			
+			<TraitHookType>TRAITHOOK_CONSTRUCT_BUILDING</TraitHookType>
+			<PrereqBuildingClassType>BUILDINGCLASS_INFIRMARY</PrereqBuildingClassType>
+		</TraitTriggerInfo>
+		<TraitTriggerInfo> <!-- Train               Recon                                    	Caretaker -->
+			<Type>TRAITTRIGGER_TRAIN_RECON_IMPORTANT</Type>
+			<CounterChanges>
+				<CounterChange>
+					<TraitType>TRAIT_ZARIA_INFO</TraitType>
+					<iModifier>1</iModifier>
+				</CounterChange>
+			</CounterChanges>
+		</TraitTriggerInfo>		
+		<TraitTriggerInfo> <!-- Train               Disciple                                    Caretaker -->
+			<Type>TRAITTRIGGER_TRAIN_DISCIPLE</Type>
+			<CounterChanges>
+				<CounterChange>
+					<TraitType>TRAIT_ZARIA_INFO</TraitType>
+					<iModifier>1</iModifier>
+				</CounterChange>
+			</CounterChanges>
+		</TraitTriggerInfo>		
+	</TraitTriggerInfos>
+</Civ4TraitTriggerInfos>
