@@ -234,48 +234,42 @@ def onBeginPlayerTurn(self, argsList):
 			pPlayer.setHasTrait(getInfoType('TRAIT_EXONERATOR'),True)
 		else:
 			pPlayer.setHasTrait(getInfoType('TRAIT_ABIDER'),True)
-			
-def onUnitKilled(self, argsList):
-	'Unit Killed'
-	pUnit, iAttacker = argsList
-	gc               = CyGlobalContext()
-	cf               = self.cf
-	map              = CyMap()
-	game             = CyGame()
-	iPlayer          = pUnit.getOwner()
-	iLoserPlayer     = pUnit.getOwner() # getUnitList() cannot be used with pPlayer	
-	player           = PyPlayer(iPlayer)
-	attacker         = PyPlayer(iAttacker)
-	pPlayer          = gc.getPlayer(iPlayer)
-	Civ              = self.Civilizations
-	Rel              = self.Religions
-	Promo            = self.Promotions["Effects"]
-	Generic          = self.Promotions["Generic"]
-	Hero             = self.Heroes
-	iCiv             = pPlayer.getCivilizationType()
-	iRel             = pUnit.getReligion()
-	iUnitType        = pUnit.getUnitType()
-	iUnitCombat      = pUnit.getUnitCombatType()
-	# iOwner           = pUnit.getOwner() # Ronkhar: duplicate of iPlayer
-	pPlot            = pUnit.plot()
-	getPlot          = map.plot
-	giftUnit         = cf.giftUnit
-	getXP            = pUnit.getExperienceTimes100
-	hasPromo         = pUnit.isHasPromotion
-	Tech             = self.Techs
-	Frozen           = self.Units["Frozen"]
-	Infernal         = self.Units["Infernal"]
-	Mercurian        = self.Units["Mercurian"]
-	Building         = self.Buildings
-	UnitCombat       = self.UnitCombats
-	addMsg           = CyInterface().addMessage
-	getText          = CyTranslator().getText
-	iNoAI            = UnitAITypes.NO_UNITAI
-	iSouth           = DirectionTypes.DIRECTION_SOUTH
-	randNum          = CyGame().getSorenRandNum
-	
-	pAttacker = gc.getPlayer(iAttacker)
-	if pPlayer.isBarbarian() and pAttacker.hasTrait(getInfoType('TRAIT_RETURN_OF_WINTER')):
-		newUnit = pAttacker.initUnit(pUnit.getUnitType(), pUnit.getX(), pUnit.getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
-		newUnit.convert(pUnit)    		
+
+def onCultureExpansion(self, argsList):
+	'City Culture Expansion'
+	pCity, iPlayer = argsList
+	gc 		= CyGlobalContext()
+	iOwner		= pCity.getOwner()
+	pPlayer		= gc.getPlayer(iOwner)
+	Civ		= self.Civilizations
+	eCiv 		= pPlayer.getCivilizationType()
+	Building	= self.Buildings
+	setNumB		= pCity.setNumRealBuilding
+	iTundra = gc.getInfoTypeForString('TERRAIN_TUNDRA')
+	iTaiga = gc.getInfoTypeForString('TERRAIN_TAIGA')
+	iGlacier = gc.getInfoTypeForString('TERRAIN_GLACIER')
+	iWinter = gc.getInfoTypeForString('FEATURE_WINTER')
+	iBlizzard = gc.getInfoTypeForString('FEATURE_BLIZZARD')	
+	if pPlayer.hasTrait(getInfoType('TRAIT_RETURN_OF_WINTER')):
+		iCultureLevel = pCity.getCultureLevel()
+		for ix in range(-iCultureLevel, iCultureLevel + 1, 1):
+			for iy in range(-iCultureLevel, iCultureLevel + 1, 1):
+				idistance = pCity.cultureDistance(ix, iy)
+				if (idistance <= iCultureLevel):
+					pPlot=CyMap().plot(pCity.getX() + ix, pCity.getY() + iy)
+					if pPlot.isOwned() and pPlot.getOwner() == iPlayer:
+						if pPlot.getTerrainType() == iTaiga:
+							pPlot.setTerrainType(iTundra,True,True) # taiga -> tundra
+						elif pPlot.getTerrainType() == iTundra:
+							pPlot.setTerrainType(iGlacier,True,True) # tundra -> glacier						
+						elif pPlot.getTerrainType() != iGlacier:
+							pPlot.setTerrainType(iTaiga,True,True) # others -> taiga
+						elif pPlot.getFeatureType() in (-1,iBlizzard):
+							pPlot.setFeatureType(iWinter, 0)
+					
 		
+				
+		
+		
+
+				

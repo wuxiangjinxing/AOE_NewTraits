@@ -8,9 +8,7 @@
 	<UnitInfos>
 		<UnitInfo>        <!-- Decius (Great Commander) -->
 			<Type>UNIT_DECIUS</Type>
-			<iMoves>3</iMoves>
-			<Special>SPECIALUNIT_PEOPLE</Special>
-			<bOnlyDefensive>1</bOnlyDefensive>			
+			<Special>SPECIALUNIT_PEOPLE</Special>			
 			<FreePromotions>
 				<FreePromotion>
 					<PromotionType>PROMOTION_RECRUITER</PromotionType>
@@ -32,10 +30,14 @@
 					<PromotionType>PROMOTION_DIMENSIONAL1</PromotionType>
 					<iNumApplied>1</iNumApplied>
 				</FreePromotion>
+				<FreePromotion>
+					<PromotionType>PROMOTION_ASCENDANT_MELEE</PromotionType>
+					<iNumApplied>1</iNumApplied>
+				</FreePromotion>				
 			</FreePromotions>
-			<iCombatDefense>5</iCombatDefense>
-			<iCommandLimit>3</iCommandLimit>
+			<iCombat>3</iCombat>			
 			<iPowerMult>3</iPowerMult>
+			<iWeaponTierMax>3</iWeaponTierMax>
 			<Image>art/interface/popups/Decius.dds</Image>
 			<Quote>TXT_KEY_POPUP_DECIUS_CREATION</Quote>			
 			<PythonOnDeath>onDeathAuric(pCaster)</PythonOnDeath>

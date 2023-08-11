@@ -175,11 +175,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TRAIT_RETURN_OF_WINTER_HELP</Tag>
-		<English>[NEWLINE][ICON_BULLET]Can capture defeated barbarian units</English>
-		<French>[NEWLINE][ICON_BULLET]Can capture defeated barbarian units</French>
-		<German>[NEWLINE][ICON_BULLET]Can capture defeated barbarian units</German>
-		<Italian>[NEWLINE][ICON_BULLET]Can capture defeated barbarian units</Italian>
-		<Spanish>[NEWLINE][ICON_BULLET]Can capture defeated barbarian units</Spanish>
+		<English>[NEWLINE][ICON_BULLET]Winter sweeps your cities as they expand</English>
+		<French>[NEWLINE][ICON_BULLET]Winter sweeps your cities as they expand</French>
+		<German>[NEWLINE][ICON_BULLET]Winter sweeps your cities as they expand</German>
+		<Italian>[NEWLINE][ICON_BULLET]Winter sweeps your cities as they expand</Italian>
+		<Spanish>[NEWLINE][ICON_BULLET]Winter sweeps your cities as they expand</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_TRAIT_ZARIA_INFO2_HELP</Tag>

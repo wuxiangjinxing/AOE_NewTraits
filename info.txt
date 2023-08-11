@@ -5,7 +5,7 @@ NewTraits
 1.1
 
 [rifeversion]
-362
+364
 
 [author]
 wuxiangjinxing
@@ -31,7 +31,7 @@ Grand Marshall(Decius):
 	Free command post in each city.
 	
 Return of Winter(Braedon the Laconic):
-	Capture all defeated barbarian units.
+	Cities become colder when expand.
 	
 Caretaker(Zaria):
 	Upgradable
