@@ -41,6 +41,6 @@
 			<Image>art/interface/popups/Decius.dds</Image>
 			<Quote>TXT_KEY_POPUP_DECIUS_CREATION</Quote>			
 			<PythonOnDeath>onDeathAuric(pCaster)</PythonOnDeath>
-		</UnitInfo>
+		</UnitInfo>	
 	</UnitInfos>
 </Civ4UnitInfos>
