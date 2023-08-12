@@ -6,8 +6,12 @@
 <!-- Civilization Infos -->
 <Civ4CivilizationInfos xmlns="x-schema:PFX_CIV4CivilizationsSchema.xml">
 	<CivilizationInfos>
-		<CivilizationInfo><!-- Elohim -->
+		<CivilizationInfo> <!-- Elohim -->
 			<Type>CIVILIZATION_ELOHIM</Type>		
+			<CivTrait>TRAIT_REDEEMING</CivTrait>
+		</CivilizationInfo>	
+		<CivilizationInfo> <!-- Grigori -->
+			<Type>CIVILIZATION_GRIGORI</Type>		
 			<CivTrait>TRAIT_DIVERSE</CivTrait>
 		</CivilizationInfo>
 	</CivilizationInfos>	

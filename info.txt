@@ -16,8 +16,11 @@ Some new traits for leaders and civilizations:
 Great Leader(Sabathiel): 
 	Creating one melee follower (warrior/axeman/phalanx) after conquering a city.  Follower type dependent on metal-working technique level.
 	
-Diverse(Elohim): 
-	Units have a 20% chance to be borned with a random race (elf/dark elf/dwarf/orc/lizardman/goblin)
+Diverse(Grigori): 
+	Units have a 40% chance to be borned with a random race.
+	
+Redeeming(Elohim):
+	Defeating units of evil leaders can trigger golden age.
 	
 Destiny(Decius):
 	Decius gets one new trait depending on his alignment.
@@ -31,9 +34,12 @@ Grand Marshall(Decius):
 	Free command post in each city.
 	
 Return of Winter(Braedon the Laconic):
-	Cities become colder when expand.
+	Cities become colder when the cultural border expands.
 	
+Thousands Faces(Furia):
+	Military units mutated.
+
 Caretaker(Zaria):
-	Upgradable
+	Upgradable as an emergent trait.
 
 ;[compatible]

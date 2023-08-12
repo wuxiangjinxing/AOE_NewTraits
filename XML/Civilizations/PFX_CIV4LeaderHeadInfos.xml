@@ -602,6 +602,15 @@
 					<bTrait>1</bTrait>
 				</Trait>				
 			</Traits>
-		</LeaderHeadInfo>			
+		</LeaderHeadInfo>
+		<LeaderHeadInfo>		<!-- Furia -->
+			<Type>LEADER_FURIA</Type>
+			<Traits>
+				<Trait>
+					<TraitType>TRAIT_THOUSAND_FACES</TraitType>
+					<bTrait>1</bTrait>
+				</Trait>				
+			</Traits>
+		</LeaderHeadInfo>		
 	</LeaderHeadInfos>		
 </Civ4LeaderHeadInfos>

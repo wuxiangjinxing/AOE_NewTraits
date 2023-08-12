@@ -196,5 +196,45 @@
 		<German>[NEWLINE][ICON_BULLET]Double the national limit of Adjuncts and Caretaker Matrons</German>
 		<Italian>[NEWLINE][ICON_BULLET]Double the national limit of Adjuncts and Caretaker Matrons</Italian>
 		<Spanish>[NEWLINE][ICON_BULLET]Double the national limit of Adjuncts and Caretaker Matrons</Spanish>
+	</TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_TRAIT_THOUSAND_FACES</Tag>
+        <English>Thousand Faces</English>
+        <French>Thousand Faces</French>
+        <German>Thousand Faces</German>
+        <Italian>Thousand Faces</Italian>
+        <Spanish>Mil Caras</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_TRAIT_THOUSAND_FACES_SHORT</Tag>
+        <English>TF</English>
+        <French>TF</French>
+        <German>TF</German>
+        <Italian>TF</Italian>
+        <Spanish>MC</Spanish>
+    </TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TRAIT_REDEEMING</Tag>
+		<English>Redeeming</English>
+		<French>Redeeming</French>
+		<German>bekehrt</German>
+		<Italian>Redeeming</Italian>
+		<Spanish>Redeeming</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TRAIT_REDEEMING_SHORT</Tag>
+		<English>Red</English>
+		<French>Red</French>
+		<German>Red</German>
+		<Italian>Red</Italian>
+		<Spanish>Red</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TRAIT_REDEEMING_HELP</Tag>
+        <English>[NEWLINE][ICON_BULLET]Redemption by defeating an "Evil" leader's unit is possible, and could trigger a Golden Age!</English>
+        <French>[NEWLINE][ICON_BULLET]Redemption by defeating an "Evil" leader's unit is possible, and could trigger a Golden Age!</French>
+        <German>[NEWLINE][ICON_BULLET]Redemption by defeating an "Evil" leader's unit is possible, and could trigger a Golden Age!</German>
+        <Italian>[NEWLINE][ICON_BULLET]Redemption by defeating an "Evil" leader's unit is possible, and could trigger a Golden Age!</Italian>
+        <Spanish>[NEWLINE][ICON_BULLET]Redemption by defeating an "Evil" leader's unit is possible, and could trigger a Golden Age!</Spanish>
 	</TEXT>	
 </Civ4GameText>

@@ -135,21 +135,19 @@ def onUnitCreated(self, argsList):
 	UnitClass	   = pUnit.getUnitClassType()
 	UnitClassInfo	   = gc.getUnitClassInfo(pUnit.getUnitClassType())
 	CombatList  = [getInfoType('UNITCOMBAT_ADEPT'),getInfoType('UNITCOMBAT_ARCHER'),getInfoType('UNITCOMBAT_DISCIPLE'),getInfoType('UNITCOMBAT_MELEE'),getInfoType('UNITCOMBAT_MOUNTED'),getInfoType('UNITCOMBAT_RECON')]
-	RaceList = ['PROMOTION_POISON_RESISTANCE','PROMOTION_ORC','PROMOTION_LIZARDMAN_CUALLI','PROMOTION_WINTERBORN','PROMOTION_DWARF','PROMOTION_ELF','PROMOTION_LIZARDMAN_MAZATL','PROMOTION_SHADE','PROMOTION_DARK_ELF']
-	
-	if gc.getInfoTypeForString('PROMOTION_ALFAR') != -1:
-		RaceList.append('PROMOTION_ALFAR')
+	Race = self.Promotions["Race"]
+	RaceList = list(Race.keys())
     
  	if pPlayer.hasTrait(getInfoType('TRAIT_GRAND_MARSHAL')) and pUnit.getUnitCombatType() in CombatList and not pUnit.isHasPromotion(getInfoType('PROMOTION_CORPORAL')):
 		pUnit.setHasPromotion(gc.getInfoTypeForString('PROMOTION_CORPORAL'),True)
                 
 	if pPlayer.hasTrait(getInfoType('TRAIT_DIVERSE')) and pUnit.getRace() == -1 and pUnit.isAlive() and not (UnitClassInfo.isUnique() or isWorldUnitClass(UnitClass)):
-		iChance = 20 
+		iChance = 40 
 		if CyGame().getSorenRandNum(100, "Bob") <= iChance: 
 			race = CyGame().getSorenRandNum(len(RaceList), "Bob")
 			if 0 <= race < len(RaceList):
 				race_name = RaceList[race]
-				pUnit.setHasPromotion(gc.getInfoTypeForString(race_name), True)
+				pUnit.setHasPromotion(Race[race_name], True)
 
 def onUnitPromoted(self, argsList):
 	'Unit Promoted'
@@ -266,6 +264,52 @@ def onCultureExpansion(self, argsList):
 							pPlot.setTerrainType(iTaiga,True,True) # others -> taiga
 						elif pPlot.getFeatureType() in (-1,iBlizzard):
 							pPlot.setFeatureType(iWinter, 0)
+							
+def onUnitKilled(self, argsList):
+	'Unit Killed'
+	pUnit, iAttacker = argsList
+	gc               = CyGlobalContext()
+	cf               = self.cf
+	map              = CyMap()
+	game             = CyGame()
+	iPlayer          = pUnit.getOwner()
+	iLoserPlayer     = pUnit.getOwner() # getUnitList() cannot be used with pPlayer	
+	player           = PyPlayer(iPlayer)
+	attacker         = PyPlayer(iAttacker)
+	pPlayer          = gc.getPlayer(iPlayer)
+	Civ              = self.Civilizations
+	Rel              = self.Religions
+	Promo            = self.Promotions["Effects"]
+	Generic          = self.Promotions["Generic"]
+	Hero             = self.Heroes
+	iCiv             = pPlayer.getCivilizationType()
+	iRel             = pUnit.getReligion()
+	iUnitType        = pUnit.getUnitType()
+	iUnitCombat      = pUnit.getUnitCombatType()
+	# iOwner           = pUnit.getOwner() # Ronkhar: duplicate of iPlayer
+	pPlot            = pUnit.plot()
+	getPlot          = map.plot
+	giftUnit         = cf.giftUnit
+	getXP            = pUnit.getExperienceTimes100
+	hasPromo         = pUnit.isHasPromotion
+	Tech             = self.Techs
+	Frozen           = self.Units["Frozen"]
+	Infernal         = self.Units["Infernal"]
+	Mercurian        = self.Units["Mercurian"]
+	Building         = self.Buildings
+	UnitCombat       = self.UnitCombats
+	addMsg           = CyInterface().addMessage
+	getText          = CyTranslator().getText
+	iNoAI            = UnitAITypes.NO_UNITAI
+	iSouth           = DirectionTypes.DIRECTION_SOUTH
+	randNum          = CyGame().getSorenRandNum
+	
+	pAttacker = gc.getPlayer(iAttacker)
+	if pAttacker.hasTrait(gc.getInfoTypeForString('TRAIT_REDEEMING')):
+		if pPlayer.isBarbarian() or pPlayer.getAlignment() == gc.getInfoTypeForString('ALIGNMENT_EVIL'):
+			if CyGame().getSorenRandNum(25, "trigger Golden Age") <= (0 + pUnit.getLevel()):
+				if not pAttacker.isGoldenAge():
+					pAttacker.changeGoldenAgeTurns(3)
 					
 		
 				
