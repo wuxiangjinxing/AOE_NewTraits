@@ -57,6 +57,7 @@
 			<Civilopedia>TXT_KEY_TRAIT_DIVERSE_PEDIA</Civilopedia>
 			<ShortDescription>TXT_KEY_TRAIT_DIVERSE_SHORT</ShortDescription>
 			<Help>TXT_KEY_TRAIT_DIVERSE_HELP</Help>
+			<bAgnostic>1</bAgnostic>
 			<CommerceModifiers>
 				<iCommerce>0</iCommerce>
 				<iCommerce>0</iCommerce>
@@ -182,6 +183,7 @@
 		</TraitInfo>
 		<TraitInfo>
 			<Type>TRAIT_THOUSAND_FACES</Type>
+			<TraitClass>TRAITCLASS_PERSONALITY</TraitClass>
 			<Description>TXT_KEY_TRAIT_THOUSAND_FACES</Description>
 			<ShortDescription>TXT_KEY_TRAIT_THOUSAND_FACES_SHORT</ShortDescription>
 			<FreePromotions>
@@ -224,6 +226,10 @@
 			<Civilopedia>TXT_KEY_TRAIT_REDEEMING_PEDIA</Civilopedia>
 			<ShortDescription>TXT_KEY_TRAIT_REDEEMING_SHORT</ShortDescription>
 			<Help>TXT_KEY_TRAIT_REDEEMING_HELP</Help>
+		</TraitInfo>
+		<TraitInfo>		<!-- Agnostic -->
+			<Type>TRAIT_AGNOSTIC</Type>
+			<TraitClass>TRAITCLASS_PERSONALITY</TraitClass>
 		</TraitInfo>		
 	</TraitInfos> 
 </Civ4TraitInfos>
