@@ -611,6 +611,15 @@
 					<bTrait>1</bTrait>
 				</Trait>				
 			</Traits>
+		</LeaderHeadInfo>
+		<LeaderHeadInfo>		<!-- Melisandre -->
+			<Type>LEADER_MELISANDRE</Type>
+			<Traits>
+				<Trait>
+					<TraitType>TRAIT_PUPPETEER</TraitType>
+					<bTrait>1</bTrait>
+				</Trait>				
+			</Traits>
 		</LeaderHeadInfo>		
 	</LeaderHeadInfos>		
 </Civ4LeaderHeadInfos>

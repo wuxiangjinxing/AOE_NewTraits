@@ -41,5 +41,8 @@ Thousands Faces(Furia):
 
 Caretaker(Zaria):
 	Upgradable as an emergent trait.
+	
+Puppeteer(Melisandre):
+	Convert defeated enemy units to puppets.
 
 ;[compatible]

@@ -236,5 +236,29 @@
         <German>[NEWLINE][ICON_BULLET]Redemption by defeating an "Evil" leader's unit is possible, and could trigger a Golden Age!</German>
         <Italian>[NEWLINE][ICON_BULLET]Redemption by defeating an "Evil" leader's unit is possible, and could trigger a Golden Age!</Italian>
         <Spanish>[NEWLINE][ICON_BULLET]Redemption by defeating an "Evil" leader's unit is possible, and could trigger a Golden Age!</Spanish>
-	</TEXT>	
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TRAIT_PUPPETEER</Tag>
+		<English>Puppeteer</English>
+		<French>Puppeteer</French>
+		<German>Puppeteer</German>
+		<Italian>Puppeteer</Italian>
+		<Spanish>Puppeteer</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TRAIT_PUPPETEER_SHORT</Tag>
+		<English>Pup</English>
+		<French>Pup</French>
+		<German>Pup</German>
+		<Italian>Pup</Italian>
+		<Spanish>Pup</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_PUPPETEER</Tag>
+		<English>Puppeteer</English>
+		<French>Puppeteer</French>
+		<German>Puppeteer</German>
+		<Italian>Puppeteer</Italian>
+		<Spanish>Puppeteer</Spanish>
+	</TEXT>		
 </Civ4GameText>

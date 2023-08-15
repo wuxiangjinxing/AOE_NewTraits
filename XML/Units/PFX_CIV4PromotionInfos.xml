@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<!-- Created with the FfH editor by Kael -->
+<!-- Sid Meier's Civilization 4 -->
+<!-- Copyright Firaxis Games 2005 -->
+<!-- -->
+<!-- Unit Infos -->
+<Civ4PromotionInfos xmlns="x-schema:PFX_CIV4UnitSchema.xml">
+	<PromotionInfos>
+		<PromotionInfo>		<!-- Puppeteer -->
+			<Type>PROMOTION_PUPPETEER</Type>
+			<Description>TXT_KEY_PROMOTION_PUPPETEER</Description>
+			<iSlaveGenerationChance>100</iSlaveGenerationChance>
+			<bPrereqAliveCapture>1</bPrereqAliveCapture>
+			<CaptureUnitClass>UNITCLASS_PUPPET</CaptureUnitClass>
+			<NotCapturedUnitCombats>
+				<NotCapturedUnitCombat>
+					<NotCapturedUnitCombatType>UNITCOMBAT_ANIMAL</NotCapturedUnitCombatType>
+					<bNotCapturedUnitCombat>1</bNotCapturedUnitCombat>
+				</NotCapturedUnitCombat>
+				<NotCapturedUnitCombat>
+					<NotCapturedUnitCombatType>UNITCOMBAT_BEAST</NotCapturedUnitCombatType>
+					<bNotCapturedUnitCombat>1</bNotCapturedUnitCombat>
+				</NotCapturedUnitCombat>
+			</NotCapturedUnitCombats>			
+			<Button>Art/Interface/Buttons/Units/Puppet.dds</Button>
+		</PromotionInfo>
+	</PromotionInfos>
+</Civ4PromotionInfos>	
