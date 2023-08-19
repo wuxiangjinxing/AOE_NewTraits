@@ -24,5 +24,11 @@
 			</NotCapturedUnitCombats>			
 			<Button>Art/Interface/Buttons/Units/Puppet.dds</Button>
 		</PromotionInfo>
+		<PromotionInfo>		<!-- Kamikaze -->
+			<Type>PROMOTION_KAMIKAZE</Type>
+			<Description>TXT_KEY_PROMOTION_KAMIKAZE</Description>
+			<iKamikazePercent>100</iKamikazePercent>
+			<Button>Art/Interface/Buttons/Units/Puppet.dds</Button>
+		</PromotionInfo>		
 	</PromotionInfos>
 </Civ4PromotionInfos>	

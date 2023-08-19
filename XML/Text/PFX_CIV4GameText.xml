@@ -254,11 +254,27 @@
 		<Spanish>Pup</Spanish>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_TRAIT_PUPPETEER_HELP</Tag>
+        <English>[NEWLINE][ICON_BULLET]Puppets are more lively.</English>
+        <French>[NEWLINE][ICON_BULLET]Puppets are more lively.</French>
+        <German>[NEWLINE][ICON_BULLET]Puppets are more lively.</German>
+        <Italian>[NEWLINE][ICON_BULLET]Puppets are more lively.</Italian>
+        <Spanish>[NEWLINE][ICON_BULLET]Puppets are more lively.</Spanish>
+	</TEXT>	
+	<TEXT>
 		<Tag>TXT_KEY_PROMOTION_PUPPETEER</Tag>
 		<English>Puppeteer</English>
 		<French>Puppeteer</French>
 		<German>Puppeteer</German>
 		<Italian>Puppeteer</Italian>
 		<Spanish>Puppeteer</Spanish>
+	</TEXT>	
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_KAMIKAZE</Tag>
+		<English>Kamikaze</English>
+		<French>Kamikaze</French>
+		<German>Kamikaze</German>
+		<Italian>Kamikaze</Italian>
+		<Spanish>Kamikaze</Spanish>
 	</TEXT>		
 </Civ4GameText>

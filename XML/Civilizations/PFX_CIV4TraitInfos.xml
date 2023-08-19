@@ -237,6 +237,7 @@
 			<Description>TXT_KEY_TRAIT_PUPPETEER</Description>
 			<Civilopedia>TXT_KEY_TRAIT_PUPPETEER_PEDIA</Civilopedia>
 			<ShortDescription>TXT_KEY_TRAIT_PUPPETEER_SHORT</ShortDescription>
+			<Help>TXT_KEY_TRAIT_PUPPETEER_HELP</Help>
 			<FreePromotions>
 				<FreePromotion>
 					<PromotionType>PROMOTION_PUPPETEER</PromotionType>

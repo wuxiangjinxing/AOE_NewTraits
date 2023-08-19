@@ -149,6 +149,9 @@ def onUnitCreated(self, argsList):
 				race_name = RaceList[race]
 				pUnit.setHasPromotion(Race[race_name], True)
 
+ 	if pPlayer.hasTrait(getInfoType('TRAIT_PUPPETEER')) and pUnit.isHasPromotion(getInfoType('PROMOTION_PUPPET')):
+		pUnit.setHasPromotion(gc.getInfoTypeForString('PROMOTION_KAMIKAZE'),True)				
+	
 def onUnitPromoted(self, argsList):
 	'Unit Promoted'
 	pUnit, iPromotion = argsList
