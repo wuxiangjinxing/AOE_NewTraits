@@ -28,6 +28,15 @@
 			<Type>PROMOTION_KAMIKAZE</Type>
 			<Description>TXT_KEY_PROMOTION_KAMIKAZE</Description>
 			<iKamikazePercent>100</iKamikazePercent>
+			<bFreeUnit>1</bFreeUnit>
+			<bNoSupply>1</bNoSupply>
+			<bNoSupport>1</bNoSupport>
+			<CityBonuses>
+				<CityBonus>
+					<bApplySelf>1</bApplySelf>
+					<fHappy>-1</fHappy>
+				</CityBonus>
+			</CityBonuses>			
 			<Button>Art/Interface/Buttons/Units/Puppet.dds</Button>
 		</PromotionInfo>		
 	</PromotionInfos>
